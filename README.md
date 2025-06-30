@@ -65,3 +65,6 @@ Edit
 apply it....
 ###
 After this you can get a url of hosted website from where you can access it 
+
+You Can Access my website >>
+http://static-website-hosting-using-s3-bucket1.s3-website.ap-south-1.amazonaws.com
