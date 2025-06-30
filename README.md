@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # 🚀 RecruitDrop – Resume Submission Portal
 
 A beautiful, modern web app for collecting job applications and resumes. Built with Flask, styled with glassmorphism, and supports both local testing and AWS S3 cloud storage.
@@ -167,3 +168,7 @@ After this you can get a url of hosted website from where you can access it
 You Can Access my website >>
 http://static-website-hosting-using-s3-bucket1.s3-website.ap-south-1.amazonaws.com
 >>>>>>> adc633129dffcf67f2bea4262308e7b344b01b3e
+=======
+# resume-dropper-s3-bucket
+A visually rich, static movie landing page hosted on AWS S3. Built using HTML, CSS, and JavaScript, this project demonstrates how to create and deploy a static website using Amazon S3 bucket services with proper CORS configuration and public access control. Ideal for learning how to use AWS for front-end hosting without a traditional web server.
+>>>>>>> cb4b82f26015002a50f0d9ccd60a3b4a3c513dc2
