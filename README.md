@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 # 🚀 RecruitDrop – Resume Submission Portal
 
 A beautiful, modern web app for collecting job applications and resumes. Built with Flask, styled with glassmorphism, and supports both local testing and AWS S3 cloud storage.
