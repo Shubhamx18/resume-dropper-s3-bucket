@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RecruitDrop - Submit Your Resume</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="gradient-header">
+        <h1>🚀 RecruitDrop</h1>
+        <p>Apply for your dream job! Fill in your details and upload your resume below.</p>
+    </div>
+    <div class="container">
+        <main>
+            <form action="{{ url_for('upload') }}" method="POST" enctype="multipart/form-data" class="upload-form">
+                <div class="form-group">
+                    <input type="text" id="name" name="name" placeholder=" " required>
+                    <label for="name">Full Name</label>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" placeholder=" " required>
+                    <label for="email">Email Address</label>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="position" name="position" placeholder=" " required>
+                    <label for="position">Position Applying For</label>
+                </div>
+                <div class="form-group">
+                    <input type="file" id="resume" name="resume" accept=".pdf,.docx" required>
+                    <label for="resume">Upload Resume (.pdf, .docx)</label>
+                </div>
+                <button type="submit" class="btn">Submit Application</button>
+            </form>
+        </main>
+        <footer>
+            <p>&copy; 2024 RecruitDrop. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html> 

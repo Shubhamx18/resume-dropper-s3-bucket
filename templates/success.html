@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submission Successful - RecruitDrop</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="gradient-header">
+        <h1>🚀 RecruitDrop</h1>
+        <p>Thank you for your submission!</p>
+    </div>
+    <div class="container">
+        <main>
+            <div class="success-message">
+                <div class="success-check">✅</div>
+                <p>Your resume has been submitted successfully.</p>
+                <p>We will review your application and get back to you shortly.</p>
+                <a href="{{ url_for('index') }}" class="btn">Back to Home</a>
+            </div>
+        </main>
+        <footer>
+            <p>&copy; 2024 RecruitDrop. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html> 

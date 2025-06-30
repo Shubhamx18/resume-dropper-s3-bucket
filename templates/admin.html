@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - RecruitDrop</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="gradient-header">
+        <h1>📋 Admin Dashboard</h1>
+        <p>View all candidate submissions below.</p>
+    </div>
+    <div class="container admin-container">
+        <header>
+            {% if local_mode %}
+            <p class="warning">⚠️ Running in Local Mode. Submissions are printed to the terminal, not stored in S3.</p>
+            {% endif %}
+        </header>
+        <main>
+            <table class="submissions-table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Position</th>
+                        <th>Resume</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for submission in submissions %}
+                    <tr>
+                        <td>{{ submission.name }}</td>
+                        <td>{{ submission.email }}</td>
+                        <td>{{ submission.position }}</td>
+                        <td><a href="{{ submission.download_url }}" class="btn-small" target="_blank"><span class="btn-icon">⬇️</span>Download</a></td>
+                    </tr>
+                    {% else %}
+                    <tr>
+                        <td colspan="4">No submissions yet.</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </main>
+        <footer>
+            <p>&copy; 2024 RecruitDrop. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html> 
